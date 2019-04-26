@@ -1,13 +1,14 @@
 package net.sourceforge.pmd.lang.apex.rule.performance;
 
-import net.sourceforge.pmd.lang.apex.ast.*;
+import net.sourceforge.pmd.lang.apex.ast.ASTMethodCallExpression;
 import net.sourceforge.pmd.lang.apex.rule.AbstractApexRule;
+import net.sourceforge.pmd.lang.apex.ast.ASTDoLoopStatement;
+import net.sourceforge.pmd.lang.apex.ast.ASTWhileLoopStatement;
+import net.sourceforge.pmd.lang.apex.ast.ASTForLoopStatement;
+import net.sourceforge.pmd.lang.apex.ast.ASTForEachStatement;
 import net.sourceforge.pmd.lang.ast.AbstractNode;
 import net.sourceforge.pmd.lang.ast.Node;
 
-/**
- * Created by N.G on 19/04/2019.
- */
 public class AvoidDebugStatementsInLoopsRule extends AbstractApexRule {
 
     private static final String SYSTEM_DEBUG = "System.debug";
