@@ -134,6 +134,15 @@
          <property name="cc_block_highlighting" value="false" />
       </properties>
    </rule>
+   <rule ref="category/apex/performance.xml/AvoidDebugStatementsInLoops" message="Avoid Debug Statements inside loops">
+      <priority>3</priority>
+      <properties>
+         <!-- relevant for Code Climate output only -->
+         <property name="cc_categories" value="Performance" />
+         <property name="cc_remediation_points_multiplier" value="150" />
+         <property name="cc_block_highlighting" value="false" />
+      </properties>
+   </rule>
    <rule ref="category/apex/errorprone.xml/AvoidDirectAccessTriggerMap" message="Avoid directly accessing Trigger.old and Trigger.new">
       <priority>3</priority>
       <properties>

@@ -77,4 +77,26 @@ public class Something {
         </example>
     </rule>
 
+    <rule name="AvoidDebugStatementsInLoops"
+          since="6.0.0"
+          message="Avoid Debug statements inside loops"
+          class="net.sourceforge.pmd.lang.apex.rule.performance.AvoidDebugStatementsInLoopsRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_rules_apex_performance.html#avoiddebugstatementsinloops">
+        <description>
+            Avoid Debug statements inside loops to avoid hitting the CPU time limit. Instead, try to debug outside the loop but consider delete the debug statement in the end to keep clean code.
+        </description>
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+public class Something {
+    public void foo() {
+        for (Integer i = 0; i < 151; i++) {
+            System.debug('debug');
+        }
+    }
+}
+]]>
+        </example>
+    </rule>
+
 </ruleset>

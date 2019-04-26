@@ -15,6 +15,7 @@
    <rule ref="rulesets/apex/quickstart.xml/AvoidSoqlInLoops" deprecated="true" />
    <rule ref="rulesets/apex/quickstart.xml/AvoidSoslInLoops" deprecated="true" />
    <rule ref="rulesets/apex/quickstart.xml/AvoidDmlStatementsInLoops" deprecated="true" />
+   <rule ref="rulesets/apex/quickstart.xml/AvoidDebugStatementsInLoops" deprecated="true" />
    <rule ref="rulesets/apex/quickstart.xml/AvoidDirectAccessTriggerMap" deprecated="true" />
    <rule ref="rulesets/apex/quickstart.xml/AvoidLogicInTrigger" deprecated="true" />
    <rule ref="rulesets/apex/quickstart.xml/AvoidGlobalModifier" deprecated="true" />
